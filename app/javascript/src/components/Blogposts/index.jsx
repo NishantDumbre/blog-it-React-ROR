@@ -2,6 +2,7 @@ import { PageLoader, PageTitle, Container } from "../commons";
 import React, { useEffect, useState } from "react";
 import Table from "../Tasks/Table";
 import fetchedData from "apis/posts";
+import PostsList from "../Posts/PostsList";
 
 const index = () => {
   const [posts, setPosts] = useState([]);
@@ -28,7 +29,8 @@ const index = () => {
 
   return (
     <Container>
-      <Table data={posts} />
+      <PageTitle title="Blog Posts" />
+      <PostsList data={posts} />
     </Container>
   );
 };

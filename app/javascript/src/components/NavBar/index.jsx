@@ -19,16 +19,16 @@ const NavBar = () => {
           </div>
           <div className="flex items-center gap-x-4">
             <Link
-              to="/dashboard"
+              to="/"
               className={classnames("text-sm font-medium text-gray-800", {
                 "text-indigo-600": location.pathname === "/dashboard",
               })}
             >
-              Todos
+              Blogs
             </Link>
             <Link
               className="rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 focus:shadow"
-              to="/tasks/create"
+              to="/"
             >
               Add new task
             </Link>
